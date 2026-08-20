@@ -1,33 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shehzaan Khan — Portfolio & Workshop Booking Site
 
-## Getting Started
+A cinematic Next.js (App Router) portfolio and workshop-booking site for Bollywood
+choreographer Shehzaan Khan, "The National Patiala Boy."
 
-First, run the development server:
+> **Content is placeholder.** Bio copy, tour dates, media thumbnails, and the
+> hero video are stand-ins — replace them with real assets before launch.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- Framer Motion (scroll reveals, staggered animations)
+- Lucide React (icons)
+- Radix UI primitives + shadcn-style `Button` component
+
+## Sections / Components
+
+- `src/components/Hero.tsx` — full-bleed autoplay video hero, name overlay, "Book a Workshop" CTA, social proof
+- `src/components/Booking.tsx` — tour date cards with scarcity badges ("Selling Fast", "Only 5 Spots Left")
+- `src/components/MediaGrid.tsx` — filterable masonry "Choreography Vault" grid
+- `src/components/Bio.tsx` — staggered text-reveal credibility/milestones section
+- `src/components/Footer.tsx` — social links + copyright
+
+## Replacing placeholder content
+
+Everything editable lives in:
+
+```
+src/data/content.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `profile` — name, title, hero video URL, follower count, Instagram link
+- `tourDates` — city, date, choreography song, spots remaining, badge text
+- `mediaItems` — Choreography Vault thumbnails, categories, view counts
+- `milestones` — credibility/bio milestones
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Replace `profile.heroVideo` with a real hosted video file, and swap
+`/public/images/placeholder.svg` references in `mediaItems` for real thumbnails.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Development
 
-## Learn More
+```bash
+npm install
+npm run dev      # start dev server at http://localhost:3000
+npm run build    # production build
+npm start        # run the production build
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
