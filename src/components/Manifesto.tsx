@@ -36,7 +36,7 @@ export default function Manifesto() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 0.8", "end 0.5"],
+    offset: ["start 0.8", "end end"],
   });
 
   return (
