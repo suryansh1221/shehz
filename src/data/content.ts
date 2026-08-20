@@ -114,6 +114,7 @@ export const vaultItems: VaultItem[] = [
     thumbnail: asset("/images/vault-2.png"),
     views: "10M+",
     instagramUrl: "https://www.instagram.com/reel/C4XTeQyMr3q/",
+    youtubeId: "kMViTNU4hJM",
   },
   {
     id: 3,
@@ -123,6 +124,7 @@ export const vaultItems: VaultItem[] = [
     thumbnail: asset("/images/vault-3.png"),
     views: "8M+",
     instagramUrl: "https://www.instagram.com/reel/CsYjZQttHn8/",
+    youtubeId: "LQHHMl9Dl8w",
   },
 ];
 
