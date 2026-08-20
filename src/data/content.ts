@@ -13,8 +13,8 @@ export const profile = {
   name: "SHEHZAAN KHAN",
   title: "The National Patiala Boy",
   marqueeText: "SHEHZAAN KHAN // NATIONAL PATIALA BOY",
-  followers: "1.5M+ Followers",
-  tourTag: "Diluminati Tour Performer",
+  followers: "500K+ Followers",
+  tourTag: "Diluminati Tour Choreographer",
   // Background video: rendered via the YouTube embed in Hero.tsx (see heroYouTubeId).
   heroVideo:
     "https://assets.mixkit.co/videos/preview/mixkit-hip-hop-dancer-performing-on-a-rooftop-42527-large.mp4",
