@@ -4,7 +4,10 @@
 // Image/video URLs are placeholders — swap them for real assets.
 // ---------------------------------------------------------------------------
 
-const PLACEHOLDER = "/images/placeholder.svg";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const asset = (path: string) => `${BASE_PATH}${path}`;
+
+const PLACEHOLDER = asset("/images/placeholder.svg");
 
 export const profile = {
   name: "SHEHZAAN KHAN",
@@ -94,7 +97,7 @@ export const vaultItems: VaultItem[] = [
     title: "Laung Da Lashkara",
     size: "large",
     orientation: "portrait",
-    thumbnail: "/images/vault-1.png",
+    thumbnail: asset("/images/vault-1.png"),
     views: "75M+",
     instagramUrl: "https://www.instagram.com/p/DX8ZMZBva7Q/",
   },
@@ -103,7 +106,7 @@ export const vaultItems: VaultItem[] = [
     title: "Viral Reel",
     size: "small",
     orientation: "landscape",
-    thumbnail: "/images/vault-2.png",
+    thumbnail: asset("/images/vault-2.png"),
     views: "10M+",
     instagramUrl: "https://www.instagram.com/reel/C4XTeQyMr3q/",
   },
@@ -112,7 +115,7 @@ export const vaultItems: VaultItem[] = [
     title: "Viral Reel",
     size: "large",
     orientation: "portrait",
-    thumbnail: "/images/vault-3.png",
+    thumbnail: asset("/images/vault-3.png"),
     views: "8M+",
     instagramUrl: "https://www.instagram.com/reel/CxXLYfOM6RM/",
   },
